@@ -1,0 +1,50 @@
+
+.AddB{
+    margin-top: 110px;
+    margin-left: 650px;
+    height: 50px;
+}
+.medicines{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 150px;
+    border: 2px;
+    width: 300px;
+}
+.medicine{ flex: 1;
+    height: 340px;
+    border:1px ridge #57b7ce;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.datas{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 200px;
+    margin-left: 200px;
+    border: 2px;
+    width: 300px;
+}
+.data{ flex: 1;
+    height: 340px;
+    border:1px ridge #57b7ce;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img123{
+    width: 200px;
+    height:150px;
+    object-fit: contain;
+    background-color: aqua;
+}
+
+.search {
+    display: block;
+    width: calc(100% - 24px); /*20px [ left & Right ] padding + 4px border [ left & Right ] */ 
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    border: 2px solid #57B7BE;
+}

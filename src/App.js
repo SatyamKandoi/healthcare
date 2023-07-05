@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React from "react";
+import Home from "./components/Home/Home";
 import './App.css';
-
+import Patientdashboard from "./components/Patient/Patientdashboard";
+import Login from "./components/Login/Login"
+import {Routes,Route} from "react-router-dom"
+import Dashboard from "./components/Patient/pages/Dashboard";
+import Medicine from "./components/Patient/pages/Medicine/Medicine";
+import Doctors from "./components/Patient/pages/Doctors";
+import Settings from "./components/Patient/pages/Settings";
+import Remainder from "./components/Patient/pages/Remainder";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			
+			<Routes>
+				<Route path="/" element={<Home />}/> 
+				<Route path="/login" element={<Login/>}/>
+				<Route path="/Patientdashboard" element={<Patientdashboard/>}/>
+				<Route path ="/Patientdashboard/Dashboard" element={<Dashboard/>}/>
+				<Route path ="/Patientdashboard/Doctors" element={<Doctors/>}/>
+				<Route path ="/Patientdashboard/Medicine" element={<Medicine/>}/>
+				<Route path="/Patientdashboard/Remainder" element={<Remainder/>}/>
+				<Route path ="/Patientdashboard/Settings" element={<Settings/>}/>
+				
+				
+			</Routes>
+			
+		</>
+	);
 }
 
 export default App;
